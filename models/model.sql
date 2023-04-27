@@ -1,0 +1,1 @@
+select to_timestamp(modifiedTime/1000) ts, * from output_no_struct_ed

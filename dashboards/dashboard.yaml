@@ -1,0 +1,25 @@
+# Visit https://docs.rilldata.com/references/project-files to learn more about Rill project files.
+
+title: "dashboard"
+model: "model"
+default_time_range: ""
+smallest_time_grain: "day"
+timeseries: "ts"
+measures:
+  - label: Bytes
+    expression: max(bytes)
+    name: total_records
+    description: Total number of records present
+    format_preset: humanize
+  - label: "Rows"
+    expression: "max(rows)"
+    name: measure
+    description: ""
+    format_preset: humanize
+dimensions:
+  - label: Dataset
+    property: dataset
+    description: ""
+  - label: Table
+    property: table
+    description: ""
